@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class SistemAntrianPasien {
+    public static void main(String[] args) {
+        Scanner sc05 = new Scanner(System.in);
+        Sistem sistem = new Sistem();
+
+        int pilihan;
+        do {
+            System.out.println("=== SISTEM ANTRIAN KLINIK ===");
+            System.out.println("1. Tambah Pasien ke Antrian");
+            System.out.println("2. Lihat Antrian");
+            System.out.println("3. Layani Pasien");
+            System.out.println("4. Cek Sisa Antrian Pasien");
+            System.out.println("5. Lihat Riwayat Transaksi ");
+            System.out.println("0. Keluar");
+            System.out.print("Pilih menu : ");
+            pilihan = sc05.nextInt();
+            sc05.nextLine();
+
+            switch (pilihan) {
+                case 1:
+                    
+                    break;
+
+                case 2:
+                    
+                    break;
+
+                case 3:
+                    
+                    break;
+
+                case 4:
+
+                    break;
+
+                case 5:
+                    
+                    break;
+
+                case 0:
+                    System.out.println("Terima kasih telah menggunakan Sistem Pengelolaan Antrian Klinik");
+                    break;
+
+                default:
+                    System.out.println("Pilihan menu tidak ada");
+                    break;
+            }
+        } while (pilihan != 0);
+
+        sc05.close();
+    }
+}
