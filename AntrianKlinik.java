@@ -23,5 +23,19 @@ public class AntrianKlinik {
         System.out.println();
     }
 
+    public void tampilkanAntrian() {
+        if (!isEmpty()) {
+            NodePasien tmp = head;
+            System.out.println(">> Antrian Pasien:");
+            while (tmp != null) {
+                tmp.data.tampilkanInformasi();
+                tmp = tmp.next;
+            }
+            System.out.println();
+        } else {
+            System.out.println(">> Antrian Pasien kosong."); 
+        }
+    }
+      
 
 }

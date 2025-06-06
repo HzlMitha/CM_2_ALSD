@@ -26,7 +26,7 @@ public class SistemAntrianPasien {
                     break;
 
                 case 2:
-                    
+                    sistem.tampilkanAntrian();
                     break;
 
                 case 3:
