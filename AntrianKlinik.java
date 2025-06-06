@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class AntrianKlinik {
     NodePasien head;
     NodePasien tail;
