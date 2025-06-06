@@ -8,7 +8,7 @@ public class TransaksiLayanan {
         this.pasien = pasien;
         this.dokter = dokter;
         this.durasiLayanan = durasiLayanan;
-        biaya = 0;
+        biaya = hitungBiaya();
     }
 
     int hitungBiaya() {
