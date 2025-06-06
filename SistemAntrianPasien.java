@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class SistemAntrianPasien {
     public static void main(String[] args) {
         Scanner sc05 = new Scanner(System.in);
+        InputData input = new InputData(sc05);
         AntrianKlinik sistem = new AntrianKlinik();
 
         int pilihan;
@@ -20,7 +21,8 @@ public class SistemAntrianPasien {
 
             switch (pilihan) {
                 case 1:
-                    
+                    Pasien p =input.inputPasien();
+                    sistem.tambahkanPasien(p);
                     break;
 
                 case 2:
