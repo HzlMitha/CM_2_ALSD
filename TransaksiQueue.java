@@ -4,6 +4,7 @@ public class TransaksiQueue {
     int rear;
     int size;
     int max;
+    AntrianKlinik antrian = new AntrianKlinik();
 
     public TransaksiQueue(int n) {
         max = n;
@@ -19,5 +20,4 @@ public class TransaksiQueue {
     public boolean isFull() {
         return size == max;
     }
-
 }

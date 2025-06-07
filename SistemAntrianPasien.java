@@ -5,6 +5,7 @@ public class SistemAntrianPasien {
         Scanner sc05 = new Scanner(System.in);
         InputData input = new InputData(sc05);
         AntrianKlinik sistem = new AntrianKlinik();
+        TransaksiQueue transaksiMasuk = new TransaksiQueue(100);
 
         int pilihan;
         do {
@@ -21,7 +22,7 @@ public class SistemAntrianPasien {
 
             switch (pilihan) {
                 case 1:
-                    Pasien p =input.inputPasien();
+                    Pasien p = input.inputPasien();
                     sistem.tambahkanPasien(p);
                     break;
 
@@ -30,7 +31,12 @@ public class SistemAntrianPasien {
                     break;
 
                 case 3:
-                    
+                    Pasien pasienDilayani = sistem.layaniPasien();
+                    if (pasienDilayani != null) {
+                        Dokter d = input.inputDokter();
+                        TransaksiLayanan transaksi = input.inputDurasi(pasienDilayani, d);
+                        transaksiMasuk.catatTransaksi(transaksi);
+                    }
                     break;
 
                 case 4:
