@@ -4,6 +4,7 @@ public class TransaksiQueue {
     int rear;
     int size;
     int max;
+    AntrianKlinik antrian = new AntrianKlinik();
 
     public TransaksiQueue(int n) {
         max = n;
@@ -20,5 +21,27 @@ public class TransaksiQueue {
         return size == max;
     }
     
-    
+    public void tambahTransaksi(TransaksiLayanan transaksi) {
+        if (isFull()) {
+            System.out.println("Antrian sudah penuh");
+            return;
+        }
+        rear = (rear + 1) % max;
+        data[rear] = transaksi;
+        size++;
+    }
+
+    public Pasien layaniPasienQueue(Dokter dokter,int durasiLayanan) {
+        if (isEmpty()) {
+            System.out.println("Tidak ada pasien dalam antrian");
+            return null;
+        }
+        return antrian.layaniPasien();
+    }
+
+    public void catatTransaksi(TransaksiLayanan t) {
+        tambahTransaksi(t);
+        System.out.println(">> Pasien telah dilayani, transaksi berhasil dicatat.");
+        System.out.println();
+    }
 }
