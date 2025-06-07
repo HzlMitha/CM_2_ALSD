@@ -12,6 +12,6 @@ public class TransaksiLayanan {
     }
 
     int hitungBiaya() {
-        return biaya = durasiLayanan * 50000;
+        return durasiLayanan * 50000;
     }
 }

@@ -24,7 +24,7 @@ public class AntrianKlinik {
     public Pasien layaniPasien() {
         if (isEmpty()) {
             System.out.println(">> Antrian kosong.");
-            System.out.println();
+            return null;
         } 
         Pasien pasienDilayani = head.data;
         if (head == tail) {
@@ -49,6 +49,7 @@ public class AntrianKlinik {
             System.out.println();
         } else {
             System.out.println(">> Antrian Pasien kosong."); 
+            System.out.println();
         }
     }
       
