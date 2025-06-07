@@ -19,5 +19,5 @@ public class TransaksiQueue {
     public boolean isFull() {
         return size == max;
     }
-    
+
 }
