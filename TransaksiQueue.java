@@ -31,14 +31,6 @@ public class TransaksiQueue {
         size++;
     }
 
-    public Pasien layaniPasienQueue(Dokter dokter,int durasiLayanan) {
-        if (isEmpty()) {
-            System.out.println("Tidak ada pasien dalam antrian");
-            return null;
-        }
-        return antrian.layaniPasien();
-    }
-
     public void catatTransaksi(TransaksiLayanan t) {
         tambahTransaksi(t);
         System.out.println(">> Pasien telah dilayani, transaksi berhasil dicatat.");
