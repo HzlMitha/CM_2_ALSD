@@ -44,7 +44,7 @@ public class SistemAntrianPasien {
                     break;
 
                 case 5:
-                    
+                    transaksiMasuk.tampilkanRiwayatTransaksi();
                     break;
 
                 case 0:

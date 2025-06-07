@@ -10,7 +10,8 @@ public class TransaksiQueue {
         max = n;
         data = new TransaksiLayanan[max];
         size = 0;
-        front = rear = -1;
+        front = 0;
+        rear = -1;
     }
 
     public boolean isEmpty() {
@@ -35,5 +36,19 @@ public class TransaksiQueue {
         tambahTransaksi(t);
         System.out.println(">> Pasien telah dilayani, transaksi berhasil dicatat.");
         System.out.println();
+    }
+
+    
+    public void tampilkanRiwayatTransaksi(){
+        System.out.println("--- Riwayat Transaksi ---");
+        System.out.println("Daftar Transaksi:");
+        if (isEmpty()) {
+            System.out.println("(Belum ada transaksi yang dicatat)");
+            return;
+        }
+        for (int i = 0; i < size; i++) {
+            TransaksiLayanan t = data [i];
+            System.out.println(t.pasien.nama + " (" + t.durasiLayanan + "jam): Rp. " + t.biaya);
+        }
     }
 }
