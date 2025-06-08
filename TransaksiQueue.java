@@ -50,5 +50,6 @@ public class TransaksiQueue {
             TransaksiLayanan t = data [i];
             System.out.println(t.pasien.nama + " (" + t.durasiLayanan + "jam): Rp. " + t.biaya);
         }
+        System.out.println();
     }
 }
