@@ -30,14 +30,9 @@ public class TransaksiQueue {
         rear = (rear + 1) % max;
         data[rear] = transaksi;
         size++;
-    }
-
-    public void catatTransaksi(TransaksiLayanan t) {
-        tambahTransaksi(t);
         System.out.println(">> Pasien telah dilayani, transaksi berhasil dicatat.");
         System.out.println();
     }
-
     
     public void tampilkanRiwayatTransaksi(){
         System.out.println("--- Riwayat Transaksi ---");

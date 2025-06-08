@@ -35,7 +35,7 @@ public class SistemAntrianPasien {
                     if (pasienDilayani != null) {
                         Dokter d = input.inputDokter();
                         TransaksiLayanan transaksi = input.inputDurasi(pasienDilayani, d);
-                        transaksiMasuk.catatTransaksi(transaksi);
+                        transaksiMasuk.tambahTransaksi(transaksi);
                     }
                     break;
 
