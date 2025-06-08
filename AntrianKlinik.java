@@ -52,6 +52,10 @@ public class AntrianKlinik {
             System.out.println();
         }
     }
+
+    public int getJumlahPasien() {
+        return size;
+    }
       
 
 }

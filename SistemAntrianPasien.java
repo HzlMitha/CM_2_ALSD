@@ -40,7 +40,7 @@ public class SistemAntrianPasien {
                     break;
 
                 case 4:
-
+                    System.out.println(">> Sisa pasien dalam antrian: " + sistem.getJumlahPasien());
                     break;
 
                 case 5:
