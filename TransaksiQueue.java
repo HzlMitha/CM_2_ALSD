@@ -42,7 +42,8 @@ public class TransaksiQueue {
             return;
         }
         for (int i = 0; i < size; i++) {
-            TransaksiLayanan t = data [i];
+            int index = (front + i) % max;
+            TransaksiLayanan t = data [index];
             System.out.println(t.pasien.nama + " (" + t.durasiLayanan + "jam): Rp. " + t.biaya);
         }
         System.out.println();
